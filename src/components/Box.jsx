@@ -19,7 +19,7 @@ const Box = (props) => {
     <div className={`box ${result}`}>
         <h1>{props.title}</h1>
         {/* img src 안에 true 면 작동, 아니면 미작동 */}
-        <img src={props.item && props.item.img} className='item-img' />
+        <img src={props.item && props.item.img} className='item-img' alt='mainImg'/>
         <h2>{result}</h2>
     </div>
   )
