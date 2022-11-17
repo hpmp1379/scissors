@@ -53,14 +53,14 @@ function App() {
      * 유저 == 보, 컴퓨터 == 가위(패)
      */
     console.log('유저',uu, '컴퓨터',cc);
-    if (uu.name == cc.name){
+    if (uu.name === cc.name){
       return 'tie';
     // }else if ( uc.name == ''){if(cc.name==''){return '승리!';}else{return '패배';}}
     //삼한연산자
     }
-    else if (uu.name == 'Rock') return cc.name == 'Scissors' ? 'win' : 'lose' ;
-    else if (uu.name == 'Scissors') return cc.name == 'Paper' ? 'win' : 'lose' ;
-    else if (uu.name == 'Paper') return cc.name == 'Rock' ? 'win' : 'lose' ;
+    else if (uu.name === 'Rock') return cc.name === 'Scissors' ? 'win' : 'lose' ;
+    else if (uu.name === 'Scissors') return cc.name === 'Paper' ? 'win' : 'lose' ;
+    else if (uu.name === 'Paper') return cc.name === 'Rock' ? 'win' : 'lose' ;
   }
   const randomChoice = () => {
     let itemArray = Object.keys(choice);
